@@ -31,7 +31,7 @@ Kratki - ilość kratek, która żyje (wybierane losowo) w pierwszej generacji, 
 
 czas - ilość czasu, która mija między wygenerowaniem i narysowaniem generacji, a rozpoczęciem robienia kolejnej, jest zawsze mniejszy od rzeczywistego - nie uwzględa czasu potrzebnego na obliczenia i rysowanie, który zależy od komputera
 
-Pattern - tutaj należy podać pattern gry - przed ukośnikiem podajemy liczby sąsiadów (od 0 do 8), aby żywa komórka przyżyła, po ukośniku - aby martwa mogła ożyć. Dla reguł Conwaya jest to "23/3": przy 2 i 3 sąsiadach komórka może przyeżyć, przy 3 może ożyć
+Pattern - tutaj należy podać pattern gry - przed ukośnikiem podajemy liczby sąsiadów (od 0 do 8), aby żywa komórka przeżyła, po ukośniku - aby martwa mogła ożyć. Dla reguł Conwaya jest to "23/3": przy 2 i 3 sąsiadach komórka może przyeżyć, przy 3 może ożyć
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
