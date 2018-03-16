@@ -7,7 +7,9 @@ Kratki = 800 #ile kratek bedzie poczatkowo "zywych" - musi byc mniej, niz s^2 (i
 czas = 50 #ile milisekund czekac do zrobienia nowej generacji
 #Uwaga - podany czas to czas po akualizacji i narysowniu kolejnej generacji - wiec nalezy uwzglednic, ze realny czas zawsze bedzie (czasami duzo) wiekszy
 Pattern = "23/3" #Przed ukośnikiem umieszcza się ilości żywych sąsiadów, aby komórka nie umarła, a po ukośniku ilość żywych sąsiadów, aby martwa komórka ożyła#Domyślny pattern oryginalnej "Gry w Życie" wg reguł Conwaya to "23/3"
-#Uwaga - podany czas to czas po akualizacji i narysowniu kolejnej generacji - wiec nalezy uwzglednic, ze realny czas zawsze bedzie (czasami duzo) wiekszy
+
+
+
 #Nizej faktyczny kod
 
 
