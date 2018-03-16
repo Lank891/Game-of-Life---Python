@@ -23,26 +23,47 @@ czas - ilość czasu, która mija między wygenerowaniem i narysowaniem generacj
 Pattern - tutaj należy podać pattern gry - przed ukośnikiem podajemy liczby sąsiadów (od 0 do 8), aby żywa komórka przyżyła, po ukośniku - aby martwa mogła ożyć. Dla reguł Conwaya jest to "23/3": przy 2 i 3 sąsiadach komórka może przyeżyć, przy 3 może ożyć
 
 Lista patternów (z Wikipedii):
+
 23/3 - "Zasady Conwaya" - Domyślny wzór, bardzo złożone zachowania
+
 /2 - "Seeds" - Wzrost intensywny, chaotyczny
+
 /234 - "Serwety" - Przypomina koronki, serwety
+
 012345678/3 - "Płatki, Życie bez śmierci" - Wzory przypominają drabiny
+
 1/1 - "Narośl" - Tworzy interesujące formy, startuje nawet od pojedynczej komórki
+
 12345/3 - "Labirynt" - Tworzy wzory przypominające labirynty
+
 125/36 - "2x2" - Ma dużo oscylatorów i statków
+
 1357/1357 - "Replikator" - Każda struktura jest z czasem zastępowana przez jej kilka kopii
+
 1358/357 - "Ameba" - Dobrze zbalansowana między życiem a śmiercią, ma statki
+
 23/36 - "HighLife" - Podobne do Conwaya (część jej struktur działa w HighLife), w dodatku struktura samoreplikująca
+
 2345/45678 - "Miasta otoczone murem" - Tworzy aktywne centra otoczone statycznymi ścianami
+
 235678/3678	- "Plamy" - Szybko się stabiliuje
+
 235678/378 - "Koagulacje" - Wzory rozszerzają się, w przeciwieństwie do plam
+
 238/357 - "Pseudożycie" - Ewolucja przypomina 23/3, ale mało który wzór z Conwaya działa pod tymi regułami
+
 245/368 - "Ruch" - Losowe struktury zwykle się stabilizują, ale wiele statków występuje naturalnie i często się pojawia. Najczęściej pojawiają się struktury stabilne, okresowe z okresem 2 lub 4, statek o okresie 7 i „dymiący pociąg” o okresie 170
+
 34/34 - "Trzy cztery" - Początkowo sądzono, że ma ona tendencje do stabilizacji, ale dzięki symulacji komputerowej okazało się, że większe wzory eksplodują. Dużo małych oscylatorów i statki
+
 34678/3678 - "Dzień i noc" - Dużo wzorów o złożonym zachowaniu. Wzory można odwracać – uczynić wszystkie żywe komórki martwymi i na odwrót, a będzie on działał identycznie.
+
 4567/345 - "Asymilacja" - Tworzy statystyczne struktury przypominające diament, wnętrza kryształów częściowo wypełnione
+
 45678/3 - "Koral" - Wzory rosną powoli, tworzą struktury przypominające rafę koralową
+
 5/345 - "Długie życie" - Bardzo łatwo można spotkać oscylatory o długim okresie
+
 5678/35678 - "Diameba" - Tworzy wielkie zwarte struktury z chaotycznie oscylującymi granicami
 
 Możliwości jest 2^18 - więc to jest tylko kilka
