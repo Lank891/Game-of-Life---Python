@@ -7,9 +7,13 @@ Poprzez zmianę wartości można wpływać na to, jak będzie wyglądać układ 
 Zasady gry w życie:
 1. Komórka może być żywa (czarna) lub martwa (biała)
 2. Każda generacja powstaje wg określonych zasad na podstawie ułożenia poprzedniej generacji:
+
   a) Jeżeli żywą komórkę otacza n żywych komórek, to pozostanie ona żywa
+  
   b) Jeżeli martwą komórkę otacza m żywych komórek, to staje się ona żywa
+  
   c) Jeżeli żywą komórkę otacza mniej lub więcej niż n żywych komórek, komórka umiera
+  
   d) Martwa komórka, nieotoczona przez m żywych komórek, umiera
 3. Dla podstawowej wersji Fry w Życie (zasady Conwaya): n = 2 lub 3, m = 3
 
