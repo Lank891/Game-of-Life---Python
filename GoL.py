@@ -6,8 +6,8 @@ Seed = "Zwykły Seed" #seed do losowania - liczba albo string
 Kratki = 800 #ile kratek bedzie poczatkowo "zywych" - musi byc mniej, niz s^2 (inaczej pokaze ValueError)
 czas = 50 #ile milisekund czekac do zrobienia nowej generacji
 #Uwaga - podany czas to czas po akualizacji i narysowniu kolejnej generacji - wiec nalezy uwzglednic, ze realny czas zawsze bedzie (czasami duzo) wiekszy
-
-
+Pattern = "23/3" #Przed ukośnikiem umieszcza się ilości żywych sąsiadów, aby komórka nie umarła, a po ukośniku ilość żywych sąsiadów, aby martwa komórka ożyła#Domyślny pattern oryginalnej "Gry w Życie" wg reguł Conwaya to "23/3"
+#Uwaga - podany czas to czas po akualizacji i narysowniu kolejnej generacji - wiec nalezy uwzglednic, ze realny czas zawsze bedzie (czasami duzo) wiekszy
 #Nizej faktyczny kod
 
 
@@ -44,11 +44,11 @@ class Application:
             self.Arr[z%s][z//s] = True
 
         #vvv tutaj byly customowe figury
-        #self.Arr[3][1] = True
-        #self.Arr[4][2] = True
-        #self.Arr[4][3] = True
-        #self.Arr[3][3] = True
-        #self.Arr[2][3] = True
+        #self.Arr[1][0] = True
+        #self.Arr[2][1] = True
+        #self.Arr[2][2] = True
+        #self.Arr[1][2] = True
+        #self.Arr[0][2] = True
 
 
     #Dla kratki o koord. x, y oblicza, ile jest zywych dookola niej
@@ -85,16 +85,13 @@ class Application:
         for x in range(s):
             for y in range(s):
                 sasiedzi = self.liczObok(x, y)
-                if sasiedzi <= 1:
-                    OdswArr[x][y] = False
-                elif 2 <= sasiedzi <= 3 and self.Arr[x][y] == True:
-                    OdswArr[x][y] = True
-                elif sasiedzi >= 4:
-                    OdswArr[x][y] = False
-                elif sasiedzi == 3 and self.Arr[x][y] == False:
-                    OdswArr[x][y] = True
-                else:
-                    OdswArr[x][y] = self.Arr[x][y]
+
+                if self.Arr[x][y]:              #Pozostawanie przy żywych - jezeli licba sasiadow jest w "stay"
+                    if sasiedzi in stay:
+                        OdswArr[x][y] = True
+                else:                           #Jeżeli nie jesteś żywy, ale liczba sasiadow jest w "born" - ożyj
+                    if sasiedzi in born:
+                        OdswArr[x][y] = True
 
         #Podmiana tablicy
         self.Arr = OdswArr.copy()
@@ -110,6 +107,11 @@ class Application:
 krSz = Rzm/s #Wymiar jednej kratki - zeby bylo prosciej pisac
 
 rnd.seed(Seed)
+
+stTab, bnTab = Pattern.split("/") #Dzielenie patternu na 2 czesci
+#Zmienienie tych czesci na liczby
+stay = [int(x) for x in stTab] #To jest ile ma być obok, aby przeżyć
+born = [int(x) for x in bnTab] #To jest ile ma być obok, aby ożyć
 
 #String rozmiaru okna
 rozmiar = str(Rzm) + "x" + str(Rzm)
