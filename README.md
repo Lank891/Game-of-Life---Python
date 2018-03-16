@@ -15,12 +15,20 @@ Zasady gry w życie:
 
 
 Zmiana ustawień - na początku kodu:
+
 Rzm - wymiary okna (okno jest kwadratowe, więc tylko jedna liczba)
+
 s - rozmiar planszy (ilość kratek) - kratki są kwadratowe, więc plansza bęzie rozmiarów s na s, Rzm powinno być podzielne przez s
+
 Seed - tutaj można podać liczbę, lub stringa - to definiuje sposób generowania początkowej planszy
+
 Kratki - ilość kratek, która żyje (wybierane losowo) w pierwszej generacji, powinna być mniejsza od s^2 (inaczej może pojawić się ValueError)
+
 czas - ilość czasu, która mija między wygenerowaniem i narysowaniem generacji, a rozpoczęciem robienia kolejnej, jest zawsze mniejszy od rzeczywistego - nie uwzględa czasu potrzebnego na obliczenia i rysowanie, który zależy od komputera
+
 Pattern - tutaj należy podać pattern gry - przed ukośnikiem podajemy liczby sąsiadów (od 0 do 8), aby żywa komórka przyżyła, po ukośniku - aby martwa mogła ożyć. Dla reguł Conwaya jest to "23/3": przy 2 i 3 sąsiadach komórka może przyeżyć, przy 3 może ożyć
+
+
 
 Lista patternów (z Wikipedii):
 
@@ -65,5 +73,7 @@ Lista patternów (z Wikipedii):
 5/345 - "Długie życie" - Bardzo łatwo można spotkać oscylatory o długim okresie
 
 5678/35678 - "Diameba" - Tworzy wielkie zwarte struktury z chaotycznie oscylującymi granicami
+
+
 
 Możliwości jest 2^18 - więc to jest tylko kilka
