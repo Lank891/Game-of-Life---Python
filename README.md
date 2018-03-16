@@ -25,7 +25,7 @@ Rzm - wymiary okna (okno jest kwadratowe, więc tylko jedna liczba)
 
 s - rozmiar planszy (ilość kratek) - kratki są kwadratowe, więc plansza bęzie rozmiarów s na s, Rzm powinno być podzielne przez s
 
-Seed - tutaj można podać liczbę, lub stringa - to definiuje sposób generowania początkowej planszy
+Seed - tutaj można podać liczbę lub string (wtedy trzeba go wziąć w cudzysłowie) - to definiuje sposób generowania początkowej planszy
 
 Kratki - ilość kratek, która żyje (wybierane losowo) w pierwszej generacji, powinna być mniejsza od s^2 (inaczej może pojawić się ValueError)
 
