@@ -13,6 +13,7 @@ Zasady gry w życie:
   d) Martwa komórka, nieotoczona przez m żywych komórek, umiera
 3. Dla podstawowej wersji Fry w Życie (zasady Conwaya): n = 2 lub 3, m = 3
 
+---------------------------------------------------------------------------------------------------------------------------------------
 
 Zmiana ustawień - na początku kodu:
 
@@ -28,7 +29,7 @@ czas - ilość czasu, która mija między wygenerowaniem i narysowaniem generacj
 
 Pattern - tutaj należy podać pattern gry - przed ukośnikiem podajemy liczby sąsiadów (od 0 do 8), aby żywa komórka przyżyła, po ukośniku - aby martwa mogła ożyć. Dla reguł Conwaya jest to "23/3": przy 2 i 3 sąsiadach komórka może przyeżyć, przy 3 może ożyć
 
-
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Lista patternów (z Wikipedii):
 
@@ -74,6 +75,6 @@ Lista patternów (z Wikipedii):
 
 5678/35678 - "Diameba" - Tworzy wielkie zwarte struktury z chaotycznie oscylującymi granicami
 
-
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Możliwości jest 2^18 - więc to jest tylko kilka
