@@ -5,7 +5,7 @@ s = 40 #rozmiar planszy: s x s, Rzm musi byc podzielne przez s (inaczej moze byc
 Seed = "Zwykły Seed" #seed do losowania - liczba albo string
 Kratki = 800 #ile kratek bedzie poczatkowo "zywych" - musi byc mniej, niz s^2 (inaczej pokaze ValueError)
 czas = 50 #ile milisekund czekac do zrobienia nowej generacji
-#Uwaga - dla duzych ukladow program dziala wolniej - i nie mozna nic z tym zrobic bez optymalizacji kodu
+#Uwaga - podany czas to czas po akualizacji i narysowniu kolejnej generacji - wiec nalezy uwzglednic, ze realny czas zawsze bedzie (czasami duzo) wiekszy
 
 
 #Nizej faktyczny kod
