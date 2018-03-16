@@ -15,7 +15,7 @@ Zasady gry w życie:
     c) Jeżeli żywą komórkę otacza mniej lub więcej niż n żywych komórek, komórka umiera
   
     d) Martwa komórka, nieotoczona przez m żywych komórek, umiera
-3. Dla podstawowej wersji Fry w Życie (zasady Conwaya): n = 2 lub 3, m = 3
+3. Dla podstawowej wersji Gry w Życie (zasady Conwaya): n = 2 i 3, m = 3
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
