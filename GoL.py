@@ -1,4 +1,4 @@
-#Te rzeczy możesz zmieniać, aby uzyskiwać różne układy
+#Te rzeczy możesz zmieniać, aby uzyskiwać różne układy :)
 
 Rzm = 800 #rozmiar okna: Rzm x Rzm (domyslnie 800x800)
 s = 40 #rozmiar planszy: s x s, Rzm musi byc podzielne przez s (inaczej moze byc krzywo albo nie pokazywac czegos albo cos)
